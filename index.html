@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Jquery</title>
+  </head>
+  <body>
+    <!-- Title -->
+    <h1 class="title" id="title">Add New Bookmark</h1>
+
+    <!-- Bookmarks -->
+    <div class="container" id="bookmark-container">
+      <!-- <div class="item">
+        <div class="name">
+          <a href="">Para</a>
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
+      <div class="item">
+        <div class="name">
+          <a href="">Para</a>
+          <i class="fas fa-times"></i>
+        </div>
+      </div> -->
+    </div>
+    <!-- Modal -->
+    <div class="modal-container" id="modal-container">
+      <div class="modal" id="modal">
+        <!-- Modal Title -->
+        <div class="modal-header">
+          Add New Bookmark
+          <i class="fas fa-times" id="modal-close-button"></i>
+        </div>
+        <div class="modal-content">
+          <form class="modal-form" id="modal-form">
+            <label title="Title" for="website-name">Title</label>
+            <input type="text" id="website-name" />
+            <label for="website-url">Url</label>
+            <input type="text" id="website-url" />
+            <button type="submit" id="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Javascript -->
+    <script src="script.js"></script>
+  </body>
+</html>

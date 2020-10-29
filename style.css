@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgba(110, 220, 0, 0.5);
+  height: 100vh;
+  width: auto;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: white;
+
+}
+
+.title {
+  font-size: 1.25rem;
+  position: fixed;
+  top: 2%;
+  left: 50%;
+  padding: 10px;
+  transform: translate(-50%, 0);
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  user-select: none;
+}
+
+.container {
+  margin-top: 100px;
+  display: flex;
+
+}
+
+.item {
+  padding: 10px;
+  margin: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  min-width: 70px;
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name a {
+  color: white;
+  text-decoration: none;
+}
+
+.name i {
+  user-select: none;
+  cursor: pointer;
+}
+
+/* MODAL */
+
+.modal-container {
+  margin-top: 200px;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  height: auto;
+  width: auto;
+
+}
+
+.show-modal {
+  display: flex;
+  overflow: hidden;
+}
+
+.modal {
+  background-color: rgb(84, 30, 211);
+  position: fixed;
+  width: 500px;
+  height: auto;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+
+}
+
+
+.modal-header {
+  background-color: rgba(110, 220, 0, 0.7);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  color: white;
+  border: none;
+  width: auto;
+  border-radius: 5px;
+  user-select: none;
+  font-size: 1.5rem;
+}
+
+.modal-header i {
+  position: relative;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  height: au;
+}
+
+.modal-form {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-form label {
+  margin-left: 5px;
+  color: white;
+  margin-top: 10px;
+  user-select: none;
+}
+
+.modal-form button {
+
+  color: black;
+  margin-top: 20px;
+  padding: 5px;
+  width: 100px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  width: 400px;
+}
+
+/* Queries */
+
+@media screen and (max-width:900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .modal {
+
+    width: 300px;
+
+    margin: 10px auto 10px;
+  }
+
+  .title {
+    font-size: 1rem;
+
+  }
+
+  input {
+
+    width: 250px;
+  }
+
+}
