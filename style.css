@@ -60,6 +60,12 @@ button {
   text-decoration: none;
 }
 
+.name a:hover {
+
+  text-decoration: underline;
+}
+
+
 .name i {
   user-select: none;
   cursor: pointer;

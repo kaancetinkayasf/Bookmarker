@@ -29,16 +29,18 @@ function fetchBookmarks() {
     if (localStorage.getItem('bookmarks')) {
         bookmarks = JSON.parse(localStorage.getItem('bookmarks'));
     } else {
-        bookmark = [
+        bookmarks = [
             {
                 name: 'Github',
-                url: 'www.github.com'
+                url: 'https://github.com/kaancetinkayasf',
             },
         ];
+
         localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
     }
 
     console.log(bookmarks);
+
     buildBookmarks();
 }
 
